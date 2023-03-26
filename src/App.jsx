@@ -13,7 +13,7 @@ function App() {
       .then(data => setMeal(data.categories))
 
   }, [])
-  // console.log(meal)
+  console.log(meal)
 
   return (
     <div className="App">
@@ -23,6 +23,7 @@ function App() {
          name={food.strCategory}
           description={food.strCategoryDescription}
           key={food.idCategory}
+          id={food.idCategory}
           ></Card>)}
       </div>
     </div>
